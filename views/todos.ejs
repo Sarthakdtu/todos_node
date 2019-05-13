@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Your Todos</title>
+  </head>
+  <body>
+    <ul>
+        <% todos.forEach(function(item){ %>
+            <li> <%= item %> </li>
+      <% })%>
+    </ul>
+    <br>
+    <form class="new_todo" method="POST">
+      <input type="text" name="todo" placeholder="Add New Todo">
+      <br>
+      <input type="submit" name="submit" value="Add To List">
+    </form>
+    <a href="/dashboard">Home</a>
+  </body>
+</html>
